@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/An-Oath-Sworn">
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
