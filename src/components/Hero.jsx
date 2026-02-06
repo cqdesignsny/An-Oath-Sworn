@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
             {/* Background with parallax effect */}
             <div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute inset-0 z-0 bg-cover bg-center bg-fixed max-md:bg-scroll"
                 style={{
                     backgroundImage: `url("${import.meta.env.BASE_URL}main-site-header.png")`
                 }}

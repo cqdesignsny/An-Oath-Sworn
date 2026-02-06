@@ -6,7 +6,7 @@ const MeetAuthor = () => {
         <section id="about-author" className="relative bg-stone-bg py-24 px-6 overflow-hidden">
             {/* Background Image */}
             <div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute inset-0 z-0 bg-cover bg-center bg-fixed max-md:bg-scroll"
                 style={{
                     backgroundImage: `url("${import.meta.env.BASE_URL}deep-gate.png")`
                 }}

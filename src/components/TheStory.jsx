@@ -6,7 +6,7 @@ const TheStory = () => {
         <section id="the-story" className="relative min-h-screen w-full py-20 px-6 flex items-center overflow-hidden">
             {/* Background Image with Fixed Attachment */}
             <div
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute inset-0 z-0 bg-cover bg-center bg-fixed max-md:bg-scroll"
                 style={{
                     backgroundImage: `url("${import.meta.env.BASE_URL}deep-forge.png")`
                 }}
