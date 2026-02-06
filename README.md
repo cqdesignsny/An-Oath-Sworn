@@ -59,6 +59,8 @@ npm run preview
 - GitHub Pages-ready with `basename` routing for `/An-Oath-Sworn`.
 - Footer year updated to 2026.
 - Home/logo navigation now returns to the homepage.
+- Desktop parallax backgrounds restored across all sections (mobile remains scroll).
+- Latest deployment is live from `main`.
 
 ## 🔄 Get the Latest Updates (Any Device)
 
