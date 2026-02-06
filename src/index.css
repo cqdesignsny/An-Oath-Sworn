@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-bg: #0a0a0f;
+  --color-stone-bg: #1a1a24;
+  --color-card-bg: #12121c;
+  --color-primary-text: #e8e0d4;
+  --color-secondary-text: #8a8578;
+  --color-rune-cyan: #4fb8cc;
+  --color-lava-orange: #e8682a;
+  --color-gold-accent: #c4973b;
+  --color-border-subtle: #2a2a38;
+
+  --font-cinzel-dec: "Cinzel Decorative", serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-lato: "Lato", sans-serif;
+
+  --shadow-rune-glow: 0 0 15px rgba(79, 184, 204, 0.4);
+  --shadow-lava-glow: 0 0 20px rgba(232, 104, 42, 0.4);
+
+  --animate-pulse-glow: pulse-glow 2s infinite ease-in-out;
+
+  @keyframes pulse-glow {
+
+    0%,
+    100% {
+      box-shadow: 0 0 5px var(--color-lava-orange);
+      border-color: var(--color-lava-orange);
+    }
+
+    50% {
+      box-shadow: 0 0 20px var(--color-lava-orange);
+      border-color: var(--color-lava-orange);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-deep-bg text-primary-text font-lato;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    background-image: url("https://www.transparenttextures.com/patterns/pinstriped-dark.png");
+  }
+}
+
+@layer components {
+  .cinematic-overlay {
+    background: linear-gradient(rgba(10, 10, 15, 0.7), rgba(10, 10, 15, 0.85));
+  }
+
+  .stone-button {
+    @apply bg-card-bg border border-border-subtle px-8 py-3 rounded-sm transition-all duration-300;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+  }
+
+  .stone-button:hover {
+    @apply border-rune-cyan shadow-rune-glow;
+  }
+
+  .lava-button {
+    @apply bg-lava-orange text-white px-8 py-3 rounded-sm transition-all duration-300 font-bold;
+  }
+
+  .lava-button:hover {
+    @apply brightness-110 shadow-lava-glow;
+  }
+}
