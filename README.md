@@ -35,8 +35,9 @@ npm run preview
 - Atmospheric backgrounds on all sections (Deep Forge, Deep Gate, Ancestors Hall, Deep Roads)
 - Enhanced mobile UX with larger text and centered buttons
 - Digital book mockup integration
-- Parallax hero section
-- Interactive atmosphere cards
+- Scroll-to-top on route change
+- Interactive atmosphere cards with mobile-friendly reveal
+- Logo returns to home and scrolls to top
 - Sales-focused CTAs throughout
 
 ## 📁 Project Structure
@@ -52,9 +53,29 @@ npm run preview
 └── package.json        # Dependencies and scripts
 ```
 
-## 🔧 GitHub Setup (Complete the Push)
+## ✅ Project Status
 
-Your repository is set up and all files are committed. To complete the push to GitHub:
+- Latest updates are committed and pushed to `main`.
+- GitHub Pages-ready with `basename` routing for `/An-Oath-Sworn`.
+- Footer year updated to 2026.
+- Home/logo navigation now returns to the homepage.
+
+## 🔄 Get the Latest Updates (Any Device)
+
+Use these commands on any computer to pull the newest changes.
+
+```bash
+# Clone once
+git clone https://github.com/cqdesignsny/An-Oath-Sworn.git
+cd "An Oath Sworn"
+
+# Pull updates anytime
+git pull
+```
+
+## 🔧 GitHub Setup (If You Need to Reconnect)
+
+Your repository is set up and all files are committed. Use these steps only if you need to re-auth or reconnect a new machine.
 
 ### Option 1: Command Line (with authentication)
 
