@@ -36,7 +36,7 @@ const Footer = () => {
 
                 <div className="space-y-2">
                     <p className="text-xs text-secondary-text/60 font-lato">
-                        © 2025 The Kraken Tree. All rights reserved.
+                        © 2026 The Kraken Tree. All rights reserved.
                     </p>
                     <div className="flex justify-center gap-4 text-[10px] text-secondary-text/40 font-lato uppercase tracking-widest">
                         <a href="#" className="hover:text-gold-accent">Terms & Conditions</a>
