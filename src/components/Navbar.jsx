@@ -22,11 +22,22 @@ const Navbar = () => {
         { name: 'Contact', path: '/contact' },
     ];
 
+    const handleLogoClick = () => {
+        setIsMobileMenuOpen(false);
+        if (location.pathname === '/') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+
     return (
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-deep-bg/95 backdrop-blur-md py-4 border-b border-border-subtle' : 'bg-transparent py-8'}`}>
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="text-2xl font-cinzel-dec text-primary-text tracking-tighter hover:text-rune-cyan transition-colors">
+                <Link
+                    to="/"
+                    onClick={handleLogoClick}
+                    className="text-2xl font-cinzel-dec text-primary-text tracking-tighter hover:text-rune-cyan transition-colors"
+                >
                     M.T. KADISIN
                 </Link>
 

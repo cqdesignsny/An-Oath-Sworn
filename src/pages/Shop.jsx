@@ -5,6 +5,7 @@ import { ShoppingCart, Download } from 'lucide-react';
 const ShopItem = ({ title, type, price, image, description, link }) => (
     <motion.div
         whileHover={{ y: -5 }}
+        whileTap={{ y: -3, scale: 0.98 }}
         className="bg-card-bg border border-border-subtle p-6 rounded-lg flex flex-col items-center text-center space-y-6"
     >
         <img src={image} alt={title} className="w-48 shadow-2xl mb-4" />
@@ -58,8 +59,7 @@ const Shop = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-forge.png")`,
-                    backgroundAttachment: 'fixed'
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-forge.png")`
                 }}
             >
                 <div className="absolute inset-0 bg-deep-bg/85"></div>

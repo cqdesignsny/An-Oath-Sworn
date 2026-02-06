@@ -8,8 +8,7 @@ const About = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: `url("${import.meta.env.BASE_URL}ancestors-hall.png")`,
-                    backgroundAttachment: 'fixed'
+                    backgroundImage: `url("${import.meta.env.BASE_URL}ancestors-hall.png")`
                 }}
             >
                 <div className="absolute inset-0 bg-deep-bg/85"></div>

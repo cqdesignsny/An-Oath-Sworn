@@ -70,11 +70,21 @@
     @apply border-rune-cyan shadow-rune-glow;
   }
 
+  .stone-button:active {
+    @apply border-rune-cyan shadow-rune-glow;
+    transform: scale(0.96);
+  }
+
   .lava-button {
     @apply bg-lava-orange text-white px-8 py-3 rounded-sm transition-all duration-300 font-bold;
   }
 
   .lava-button:hover {
     @apply brightness-110 shadow-lava-glow;
+  }
+
+  .lava-button:active {
+    @apply brightness-110 shadow-lava-glow;
+    transform: scale(0.96);
   }
 }

@@ -8,8 +8,7 @@ const MeetAuthor = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-gate.png")`,
-                    backgroundAttachment: 'fixed'
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-gate.png")`
                 }}
             >
                 <div className="absolute inset-0 bg-stone-bg/80"></div>
@@ -24,7 +23,7 @@ const MeetAuthor = () => {
                     className="flex justify-center lg:justify-end"
                 >
                     <div className="relative max-w-[380px] group">
-                        <div className="absolute -inset-2 bg-gold-accent opacity-20 rounded-xl blur-lg group-hover:opacity-40 transition-opacity duration-500"></div>
+                        <div className="absolute -inset-2 bg-gold-accent opacity-20 rounded-xl blur-lg max-md:opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
                         <img
                             src={`${import.meta.env.BASE_URL}author-photo.webp`}
                             alt="M.T. Kadisin"

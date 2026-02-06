@@ -4,23 +4,24 @@ import { motion } from 'framer-motion';
 const AtmosphereCard = ({ image, label, caption }) => (
     <motion.div
         whileHover={{ y: -10 }}
-        className="relative group overflow-hidden rounded-sm bg-card-bg border border-border-subtle aspect-[16/9]"
+        whileTap={{ y: -6, scale: 0.98 }}
+        className="relative group overflow-hidden rounded-sm bg-card-bg border border-border-subtle aspect-[16/9] cursor-pointer"
     >
         <img
             src={image}
             alt={label}
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-deep-bg/20 to-transparent group-hover:from-deep-bg/90 transition-all duration-300"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-deep-bg/20 to-transparent max-md:from-deep-bg/90 group-hover:from-deep-bg/90 transition-all duration-300"></div>
 
-        {/* Rune Border on Hover */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-rune-cyan scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+        {/* Rune Border — visible by default on mobile, hover on desktop */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-rune-cyan max-md:scale-x-100 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
 
         <div className="absolute bottom-0 left-0 p-6 w-full">
-            <h3 className="text-xl font-cinzel text-primary-text mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 className="text-xl font-cinzel text-primary-text mb-2 max-md:translate-y-0 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 {label}
             </h3>
-            <p className="text-sm text-secondary-text font-lato opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+            <p className="text-sm text-secondary-text font-lato max-md:opacity-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                 {caption}
             </p>
         </div>
@@ -52,8 +53,7 @@ const DiscoverRockhome = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-road.png")`,
-                    backgroundAttachment: 'fixed'
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-road.png")`
                 }}
             >
                 <div className="absolute inset-0 bg-deep-bg/75"></div>

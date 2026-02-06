@@ -8,8 +8,7 @@ const Hero = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: `url("${import.meta.env.BASE_URL}main-site-header.png")`,
-                    backgroundAttachment: 'fixed'
+                    backgroundImage: `url("${import.meta.env.BASE_URL}main-site-header.png")`
                 }}
             >
                 <div className="absolute inset-0 bg-black/60 cinematic-overlay"></div>
