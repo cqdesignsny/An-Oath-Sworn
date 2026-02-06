@@ -26,7 +26,7 @@ const TheHook = () => {
                     className="flex flex-col items-center gap-8"
                 >
                     <img
-                        src="/book-mockup.png"
+                        src={`${import.meta.env.BASE_URL}book-mockup.png`}
                         alt="An Oath Sworn Book"
                         className="w-full max-w-[240px] drop-shadow-2xl"
                     />

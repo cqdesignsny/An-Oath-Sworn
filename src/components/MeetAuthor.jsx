@@ -8,7 +8,7 @@ const MeetAuthor = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/deep-gate.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-gate.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >
@@ -26,7 +26,7 @@ const MeetAuthor = () => {
                     <div className="relative max-w-[380px] group">
                         <div className="absolute -inset-2 bg-gold-accent opacity-20 rounded-xl blur-lg group-hover:opacity-40 transition-opacity duration-500"></div>
                         <img
-                            src="/author-photo.webp"
+                            src={`${import.meta.env.BASE_URL}author-photo.webp`}
                             alt="M.T. Kadisin"
                             className="relative z-10 w-full rounded-xl border border-gold-accent/30 shadow-2xl"
                         />

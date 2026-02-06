@@ -30,7 +30,7 @@ const Shop = () => {
             title: "An Oath Sworn",
             type: "Signed Paperback",
             price: "$18.99",
-            image: "/book-mockup.png",
+            image: `${import.meta.env.BASE_URL}book-mockup.png`,
             description: "A physical copy of Book One, signed by the author with a custom message.",
             link: "https://www.mtkadisin.com/shop"
         },
@@ -38,7 +38,7 @@ const Shop = () => {
             title: "An Oath Sworn",
             type: "Digital Edition (ePub)",
             price: "$6.99",
-            image: "/book-digital.png",
+            image: `${import.meta.env.BASE_URL}book-digital.png`,
             description: "Instant delivery via BookFunnel. Compatible with Kindle, Kobo, and Apple Books.",
             link: "https://www.mtkadisin.com/shop"
         },
@@ -46,7 +46,7 @@ const Shop = () => {
             title: "Stone King Art Print",
             type: "Limited Edition",
             price: "$24.99",
-            image: "/cover-art.jpg",
+            image: `${import.meta.env.BASE_URL}cover-art.jpg`,
             description: "High-quality 12x18 print of the original cover art by the Kraken Tree.",
             link: "https://www.mtkadisin.com/shop"
         }
@@ -58,7 +58,7 @@ const Shop = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/deep-forge.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-forge.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >

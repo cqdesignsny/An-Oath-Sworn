@@ -8,7 +8,7 @@ const TheStory = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/deep-forge.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-forge.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >
@@ -50,7 +50,7 @@ const TheStory = () => {
                     className="flex flex-col items-center"
                 >
                     <img
-                        src="/book-mockup.png"
+                        src={`${import.meta.env.BASE_URL}book-mockup.png`}
                         alt="An Oath Sworn Book Mockup"
                         className="w-full max-w-[400px] drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)] mb-8"
                     />

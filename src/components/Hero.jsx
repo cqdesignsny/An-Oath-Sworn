@@ -8,7 +8,7 @@ const Hero = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/main-site-header.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}main-site-header.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >

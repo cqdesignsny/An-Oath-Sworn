@@ -9,7 +9,7 @@ const Contact = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/deep-forge.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-forge.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >

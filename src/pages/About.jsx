@@ -8,7 +8,7 @@ const About = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/ancestors-hall.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}ancestors-hall.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >
@@ -28,7 +28,7 @@ const About = () => {
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        src="/author-portrait.png"
+                        src={`${import.meta.env.BASE_URL}author-portrait.png`}
                         alt="Author portrait"
                         className="w-full rounded-lg border border-gold-accent/20"
                     />

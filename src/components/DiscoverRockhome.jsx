@@ -30,17 +30,17 @@ const AtmosphereCard = ({ image, label, caption }) => (
 const DiscoverRockhome = () => {
     const cards = [
         {
-            image: "/deep-gate.png",
+            image: `${import.meta.env.BASE_URL}deep-gate.png`,
             label: "The Deep Gate",
             caption: "Where stone meets fire, the guardians keep watch."
         },
         {
-            image: "/deep-road.png",
+            image: `${import.meta.env.BASE_URL}deep-road.png`,
             label: "The Deep Roads",
             caption: "Ancient highways carved through the bones of the mountain."
         },
         {
-            image: "/ancestors-hall.png",
+            image: `${import.meta.env.BASE_URL}ancestors-hall.png`,
             label: "The Hall of Ancestors",
             caption: "Where kings of stone stand eternal vigil."
         }
@@ -52,7 +52,7 @@ const DiscoverRockhome = () => {
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url("/deep-road.png")',
+                    backgroundImage: `url("${import.meta.env.BASE_URL}deep-road.png")`,
                     backgroundAttachment: 'fixed'
                 }}
             >
