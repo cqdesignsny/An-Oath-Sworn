@@ -33,7 +33,7 @@ const Shop = () => {
             price: "$18.99",
             image: `${import.meta.env.BASE_URL}book-mockup.png`,
             description: "A physical copy of Book One, signed by the author with a custom message.",
-            link: "https://www.mtkadisin.com/shop"
+            link: "https://www.mtkadisin.com/shop/p/an-oath-sworn-paperback"
         },
         {
             title: "An Oath Sworn",
@@ -41,7 +41,7 @@ const Shop = () => {
             price: "$6.99",
             image: `${import.meta.env.BASE_URL}book-digital.png`,
             description: "Instant delivery via BookFunnel. Compatible with Kindle, Kobo, and Apple Books.",
-            link: "https://www.mtkadisin.com/shop"
+            link: "https://www.mtkadisin.com/shop/p/an-oath-sworn-digital-copy"
         },
         {
             title: "Stone King Art Print",
